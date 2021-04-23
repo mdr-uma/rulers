@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{A Rack-based Web Framework}
   spec.description   = %q{A Rack-based Web Framework, but with extra awesome.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/mdr-uma/rulers"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
@@ -26,4 +26,6 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+  
+  spec.add_runtime_dependency "rack"
 end
